@@ -1,4 +1,4 @@
-package Game.Main;
+package main;
 
 public class Main {
 

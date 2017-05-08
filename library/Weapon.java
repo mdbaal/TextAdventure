@@ -1,4 +1,4 @@
-package Library;
+package library;
 
 	//Weapons\\
 	public class Weapon {
