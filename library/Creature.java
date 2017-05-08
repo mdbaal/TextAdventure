@@ -10,15 +10,7 @@ public class Creature{
     int currentRoom;
 }
 
-	class Player extends Creature {
-        Player(){
-            health = 100;
-            mana = 100;
-            currentRoom = 0;
-        }
-    }
-	
-	class Bear extends Creature{
+class Bear extends Creature{
         Bear(){
             health = 100;
         }
