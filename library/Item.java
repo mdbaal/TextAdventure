@@ -10,26 +10,26 @@ public class Item {
 
     //item specific variables\\
     public int amount;
-    public int healthRes;
-    public int manaRes;
+    public int healthRegen;
+    public int manaRegen;
 
 }
 
 
 
     //general items\\
-    class Hpotion extends Item{
-    Hpotion(){
+    class HealthPotion extends Item{
+    HealthPotion(){
         name = "Health potion";
         amount = 1;
-        healthRes = 5;
+        healthRegen = 5;
     }
 }
-class Mpotion extends Item{
-    Mpotion() {
+class ManaPotion extends Item{
+    ManaPotion() {
         name = "Mana potion";
         amount = 1;
-        manaRes = 5;
+        manaRegen = 5;
     }
 }
 class GoldCoin extends Item{
@@ -42,14 +42,14 @@ class Bread extends Item{
     Bread() {
         name = "Bread";
         amount = 1;
-        healthRes = 2;
+        healthRegen = 2;
     }
 }
 class Water extends Item{
     Water() {
         name = "Water";
         amount = 1;
-        healthRes = 2;
+        healthRegen = 2;
     }
 }
 

@@ -1,5 +1,9 @@
 package library;
 
+/**
+ * Created by mirco on 5/8/2017.
+ */
+
 	//Weapons\\
 	public class Weapon {
         //general variables\\
