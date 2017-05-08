@@ -7,19 +7,25 @@ package library;
 public class Creature{
     int health;
     int mana;
-
-
+    int currentRoom;
 }
 
 	class Player extends Creature {
-
+        Player(){
+            health = 100;
+            mana = 100;
+            currentRoom = 0;
+        }
     }
 	
-	class animal extends Creature{
-
-
+	class Bear extends Creature{
+        Bear(){
+            health = 100;
+        }
     }
-	class npc extends Creature {
+    class Deer extends Creature{
+        Deer(){
+            health = 50;
+        }
+    }
 
-
-	}

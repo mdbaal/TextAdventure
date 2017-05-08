@@ -5,13 +5,15 @@ package library;
  */
 public class Item {
     //general variables\\
-    public String name;
-    public String description;
+    String name;
+    String description;
 
     //item specific variables\\
-    public int amount;
-    public int healthRegen;
-    public int manaRegen;
+    int amount;
+    int maxAmount;
+    int healthRegen;
+    int manaRegen;
+
 
 }
 
@@ -22,6 +24,7 @@ public class Item {
     HealthPotion(){
         name = "Health potion";
         amount = 1;
+        maxAmount = 5;
         healthRegen = 5;
     }
 }
@@ -29,6 +32,7 @@ class ManaPotion extends Item{
     ManaPotion() {
         name = "Mana potion";
         amount = 1;
+        maxAmount = 5;
         manaRegen = 5;
     }
 }
@@ -42,6 +46,7 @@ class Bread extends Item{
     Bread() {
         name = "Bread";
         amount = 1;
+        maxAmount = 5;
         healthRegen = 2;
     }
 }
@@ -49,7 +54,15 @@ class Water extends Item{
     Water() {
         name = "Water";
         amount = 1;
+        maxAmount = 5;
         healthRegen = 2;
+    }
+}
+class Arrow extends Item{
+    Arrow(){
+        name = "Arrow";
+        amount = 5;
+        maxAmount = 10;
     }
 }
 

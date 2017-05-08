@@ -15,7 +15,6 @@ package library;
         public int block;
         public int durability;
         public int minDurability;
-        public int arrows;
         public int manaCost;
 
         class Sword extends Weapon {
@@ -45,7 +44,6 @@ package library;
                 damage = 7 + level;
                 durability = 50;
                 minDurability = 8 - level * -1;
-                arrows = 0;
             }
         }
 
