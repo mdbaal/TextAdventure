@@ -6,6 +6,8 @@ package library.creatures;
 
 public class Bear extends Creature {
         public Bear(){
-            health = 100;
+            name = "bear";
+            health = 15;
+            damage = 5;
         }
     }

@@ -6,6 +6,9 @@ package library.creatures;
 
 public class Deer extends Creature {
         Deer(){
-            health = 50;
+
+            name = "deer";
+            health = 5;
+            damage = 2;
         }
     }

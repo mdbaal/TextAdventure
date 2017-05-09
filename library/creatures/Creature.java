@@ -5,8 +5,9 @@ package library.creatures;
  */
 
 public class Creature{
+    String name;
     int health;
-    int mana;
-    int currentRoom;
+    int damage;
+
 }
 
