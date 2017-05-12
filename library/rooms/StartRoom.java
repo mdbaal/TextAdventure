@@ -5,8 +5,6 @@ package library.rooms;
  */
 public class StartRoom extends Room{
 
-
-
     StartRoom(){
         x = 0;
         y = 0;

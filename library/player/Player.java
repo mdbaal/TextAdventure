@@ -1,5 +1,6 @@
 package library.player;
 
+import library.actions.Direction;
 import library.items.*;
 
 /**

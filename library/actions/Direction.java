@@ -13,24 +13,26 @@ public enum Direction {
 
     WEST("To the west" , -1 ,0 );
 
-    Direction(String Msg,int dX,int dY){
+    private final int dX;
+    private final int dY;
 
+    private final String description;
+
+    Direction(String description,int dX,int dY){
+        this.description = description;
+        this.dX = dX;
+        this.dY = dY;
+    }
+    public int getdX() {
+        return dX;
     }
 
+    public int getdY() {
+        return dY;
+    }
 
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
+    public String getDescription() {
+        return description;
+    }
 
 }
