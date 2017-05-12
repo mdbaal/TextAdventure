@@ -7,9 +7,9 @@ import library.player.Player;
  */
 public class Game {
 
-    public void Start(){
+    public void start(){
         Player player = new Player();
-        System.out.println(player.GetName());
+        System.out.println(player.getName());
 
     }
 }

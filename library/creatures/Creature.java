@@ -5,9 +5,18 @@ package library.creatures;
  */
 
 public class Creature{
+
     String name;
     int health;
     int damage;
+
+    public String getName() {
+        return name;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
 
 }
 

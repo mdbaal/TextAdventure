@@ -11,15 +11,12 @@ public class Player {
     int health;
     int mana;
     int currentRoom;
-
-
+    int x;
+    int y;
 
     String name = "John";
 
-
-
     Item[] inventory;
-
 
     public Player(){
         health = 100;
@@ -27,19 +24,21 @@ public class Player {
         currentRoom = 0;
         inventory = new Item[4];
 
+        x = 0;
+        y = 0;
     }
 
-    public Item GetInventory(int inventorySpot) {
+    public Item getInventory(int inventorySpot) {
         return inventory[inventorySpot];
     }
-    public String GetName() {
+    public String getName() {
         return name;
     }
 
-    public int GetCurrentRoom(){
+    public int getCurrentRoom(){
         return this.currentRoom;
     }
-    public void SetCurrentRoom(int NextRoom){
+    public void setCurrentRoom(int NextRoom){
         this.currentRoom = NextRoom;
     }
 
