@@ -1,5 +1,6 @@
 package library.player;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import library.actions.Direction;
 import library.items.*;
 
@@ -27,6 +28,8 @@ public class Player {
 
         x = 0;
         y = 0;
+
+        isAlive();
     }
 
     public Item getInventory(int inventorySpot) {
@@ -42,6 +45,26 @@ public class Player {
     public void setCurrentRoom(int NextRoom){
         this.currentRoom = NextRoom;
     }
+
+    void damage(int amount){
+        this.health -= amount;
+    }
+
+    void heal(int amount){
+        this.health += amount;
+    }
+
+    Boolean isAlive(){
+        Boolean alive = null;
+        if(this.health > 0){
+            alive =  true;
+        }else {
+            alive = false;
+        }
+        return alive;
+    }
+
+
 
 }
 
