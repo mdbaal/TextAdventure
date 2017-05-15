@@ -15,6 +15,7 @@ public class Parser {
 
     public Parser(){
         commands.listWords();
+       // getCommand();
     }
 
     public void getCommand(){
@@ -29,6 +30,8 @@ public class Parser {
         catch(IOException exc){
             System.out.println ("There was an error during reading: "
                     + exc.getMessage());
+
+
         }
     }
 }

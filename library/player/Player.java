@@ -1,7 +1,6 @@
 package library.player;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import library.actions.Direction;
+import library.rooms.*;
 import library.items.*;
 
 /**
@@ -12,22 +11,22 @@ public class Player {
 
     int health;
     int mana;
-    int currentRoom;
+
     int x;
     int y;
 
     String name = "John";
+
+    Room currentRoom;
 
     Item[] inventory;
 
     public Player(){
         health = 100;
         mana = 100;
-        currentRoom = 0;
+
         inventory = new Item[4];
 
-        x = 0;
-        y = 0;
 
         isAlive();
     }
@@ -37,13 +36,6 @@ public class Player {
     }
     public String getName() {
         return name;
-    }
-
-    public int getCurrentRoom(){
-        return this.currentRoom;
-    }
-    public void setCurrentRoom(int NextRoom){
-        this.currentRoom = NextRoom;
     }
 
     void damage(int amount){
@@ -65,6 +57,10 @@ public class Player {
     }
 
 
+    public void setCurrentRoom(Room room){
+        this.currentRoom = room;
+        //movePlayer(currentRoom.getX(),currentRoom.getY());
+    }
 
 }
 
